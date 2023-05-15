@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 body {
-    max-width: 1440px;
     font-family: "Montserrat", sans-serif;
     margin: 0 auto;
 }
@@ -27,7 +26,7 @@ li {
     display: flex;
     justify-content: space-between;
     height: 116px;
-    top: 50px;
+    align-items: end;
 }
 .icon-header-logo {
     width: 130px;
@@ -115,7 +114,6 @@ li {
 }
 /*main*/
 .main {
-    min-height: 2138px;
     background: linear-gradient(#323264  0% ,#323264  59.9%, #643E72 100%) ;  
     border-radius: 0 0 12px 12px;   
     box-shadow: 0 10px #CACADB, 0 20px #E7E7F2;
@@ -128,14 +126,17 @@ li {
     background-repeat: no-repeat;
     background-position: center center;
     height: 800px;
+    display: flex;
 }
-.providers {
+.heading {
     color: #fff;
     font-size: 38px;
     line-height: 1.21;
     font-weight: bold;
-    position: absolute;
-    translate: 88% 377px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 .button-scroll {
     content: "\203A";
@@ -220,6 +221,9 @@ li {
 .s-cards {
     display: flex;
     margin-bottom: 60px;
+}
+.s-cards:last-child {
+    padding-bottom: 60px;
 }
 .services-card {
     width: 400px;
