@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/styles.css" />
@@ -19,13 +23,13 @@
         </a>
       </div>
       <div class="header-right">
-        <div class="adres">
+        <div class="header-adress">
           <ul class="language">
             <li class="lang-name"><a href="" class="lang"> УК</a></li>
             <li class="lang-name"><a href="" class="lang">РУ</a></li>
             <li class="lang-name"><a href="" class="lang active">EN</a></li>
           </ul>
-          <p class="name-adres">Kyiv, Mechnikova str, 14/1</p>
+          <span class="name-adres">Kyiv, Mechnikova str, 14/1</span>
           <a href="0800211927" class="tel">0800 211 927</a>
           <a href="">
             <svg class="icon icon-header-facebook">
@@ -50,14 +54,17 @@
       <div class="main">
         <div class="splash">
           <h1 class="heading">you legal solutions provider</h1>
-          <a href="" class="button-scroll">&rsaquo;</a>
-        </div>
-
-        <div class="experience main-container">
+          <a href="#experience" class="scroll">
+          <svg class="icon icon-scroll">
+            <use xlink:href="images/sprite.svg#scroll"></use>
+          </svg>
+          </a>
+        </div>         
+        <div class="experience main-container" >
           <div class="experience-of">
-            <ul>
-              <li class="name-of-experience active"
-                ><a href="#" data-target="#content1" class="experience-name"
+            <ul id="experience">
+              <li class="name-of-experience"
+                ><a href="#" data-target="#content1"  class="experience-name active" 
                   >Consistent</a
                 ></li
               >
@@ -145,7 +152,7 @@
               Comprehensive daily
               legal support
              </a>
-            <p class="about-types">An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.</p>
+            <p class="about-types">In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.</p>
           </div>
           <div class="services-card">
             <div class="icon-background">
@@ -182,7 +189,7 @@
                   <img  class="icon icon-court" src="images/services/Court.svg" alt="">
                 </div>
                    <a href="" class="services-types">
-                    Structuring corporate relationships
+                    Judicial representation
                    </a>
                   <p class="about-types">Is it a small, medium-sized company or a market leader? Local business or multinational company? Do you have your own legal department or not?</p>
                 </div>
@@ -233,7 +240,79 @@
     </div> 
   </div>
 
+  <div class="clients">
+    <h5 class="clients-trust">They already trust us</h5>
+    <div class="grid">
+      <div class="hillel b-size"><img src="images/clients/hillel.svg" alt=""></div>
+      <div class="wannabiz b-size"><img src="images/clients/wannabiz.svg" alt=""></div>
+      <div class="tapgerine b-size"><img src="images/clients/tapgerine.svg" alt=""></div>
+      <div class="Dlook b-size" ><img src="images/clients/3dlook.svg" alt=""></div>
+      <div class="orangear b-size"><img src="images/clients/orangear.svg" alt=""></div>
+      <div class="adtelligent b-size"><img src="images/clients/adtelligent.svg" alt=""></div>
+      <div class="clickky  b-size"><img src="images/clients/clickky.svg" alt=""></div>
+      <div class="eco  b-size"><img src="images/clients/eco-leasing.svg" alt=""></div>
+      <div class="infatek b-size" ><img src="images/clients/ingratek.svg" alt=""></div>
+      <div class="city-park b-size"><img src="images/clients/city-par.svg" alt=""></div>
+      <div class="artprint b-size"><img src="images/clients/artprint.svg" alt=""></div>
+      <div class="ultimatecard b-size"><img src="images/clients/ultimatecard.svg" alt=""></div>
+    </div>
+  </div>
+
+    <div class="publications container">
+
+      <a href="" class="publication-item">Publications &rsaquo;</a>
+      <h3 class="publication-item-text">We have something to tell</h3>
+    <div class="flex">
+      <div class="p-cards">
+        <div><img src="images/public/Cover1.png" alt=""></div>  
+        <div class="p-about">
+        <a class="publication-name" href="">Equity associate</a>
+        <p class="publication-date">April 22</p>
+        <p class="publication-text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+        </div>
+      </div>
+
+      <div class="p-cards">
+        <div><img src="images/public/Cover2.png" alt=""></div>  
+        <div class="p-about">
+        <a class="publication-name" href="">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</a>
+        <p class="publication-date">September 29</p>
+        <p class="publication-text">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
+        </div>
+      </div>
+
+      <div class="p-cards">
+        <div><img src="images/public/Cover3.png" alt=""></div>  
+        <div class="p-about">
+        <a class="publication-name" href="">Millennial Testament</a>
+        <p class="publication-date">August 19</p>
+        <p class="publication-text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+        </div>
+      </div>
+    </div>
+    </div>
     </main>
+
+    <footer class="footer container">
+      <div class="footer-wrap">
+      <div class="footer-adress">
+      <span class="footer-adress-name">Kyiv, Mechnikova str, 14/1 </span>
+      <a class="map" href="">On map</a>
+      </div>
+      </div>
+      <div class="footer-contacts">
+        <a href="">
+          <svg class="icon icon-footer-facebook">
+            <use xlink:href="images/sprite.svg#footer-facebook"></use>
+          </svg>
+        </a>
+        <a class="footer-tel" href="0800211927">0800 211 927</a>
+        <a class="footer-email" href="">contact@forstudy.space</a>
+      </div>
+      <div class="copyrights">
+        <span>© 2021 HLEGAL Law company, LLC</span>
+      </div>
+    </footer>
 
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/slick.min.js"></script>
