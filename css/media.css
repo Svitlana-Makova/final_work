@@ -1,0 +1,31 @@
+@media screen and (max-width: 1024px) {
+    .header {
+        width: 1024px;
+    }
+    .main-container {
+        padding: 0 60px;
+    }
+    .name-of-experience {
+        width: 375px;
+    }
+    .grid {
+        grid-template-columns: 256px 256px 256px 256px;
+    }
+    .publications {
+        height: 689px;
+    } 
+    .publication-img {
+        width: 281px;
+    }
+    .p-cards {
+        height: 556px;
+    }
+    
+    .team {
+        height: 528px;
+    } 
+    .main-photo {
+        height: 528px;
+    }
+    
+}

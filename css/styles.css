@@ -115,12 +115,25 @@ li {
 /*main*/
 .main {
     background: linear-gradient(#323264  0% ,#323264  59.9%, #643E72 100%) ;  
-    border-radius: 0 0 12px 12px;   
-    box-shadow: -20px 10px #CACADB, -40px 20px #E7E7F2;
+    border-radius: 0 0 12px 12px;       
 }
-.main::after {
+/*.main::after {
     content: "";
-}
+    position: absolute;
+    border-top: 10px solid #CACADB;
+    width: 97%;
+    margin: 0 20px;
+    border-radius: 0 0 12px 12px; 
+}*/
+/*.main::before {
+    content: "";
+    position: absolute;
+    margin: 0 40px;
+    width: 94%;
+    border-radius: 0 0 12px 12px;
+    right: 0px;
+    border-top: 10px solid #E7E7F2;
+}*/
 .splash {
     background: url(../images/svg/Symbol.svg) ;
     background-repeat: no-repeat;
@@ -138,7 +151,6 @@ li {
     align-items: center;
     width: 100%;
 }
-
 .icon-scroll {
     width: 42px;
     height: 42px;
@@ -146,6 +158,9 @@ li {
     position: absolute;
     left: 48%;
     top: 728px;
+}
+.icon-scroll path:hover {
+    fill: #F0145A;
 }
 .main-container {
     padding: 0 180px;
@@ -270,7 +285,7 @@ li {
 /*team*/
 .team {
     height: 344px;
-    margin: 60px 0 ;
+    margin-bottom: 60px;
     display: flex;
 }
 .main-photo {
@@ -314,7 +329,10 @@ li {
     display: flex;
 }
 .slick-dots {
-    bottom: 30px;
+    bottom: 10px;
+}
+.slick-dots li.slick-active button:before{
+    color: #24A3FF;
 }
 .slick-dots li button:before {
     font-size: 16px;
@@ -322,6 +340,9 @@ li {
     color: #24A3FF;
     opacity: 20%;
 }
+.slick-dotted.slick-slider {
+    margin-bottom: 50px;
+} 
 
 /*Clients*/
 
@@ -341,7 +362,6 @@ li {
     grid-template-columns: 360px 360px 360px 360px;
 }
 .b-size {
-    width: 360px;
     height: 120px;
     display: flex;
     align-items: center;

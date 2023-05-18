@@ -41,7 +41,7 @@ $(document).ready(function () {
 });
 });
 
-// MightyScroll
+// Scroll
 $.fn.scrollFun = function () {
 	$(this).click(function (e) {
 		var h = $(this).attr('href'),
@@ -68,6 +68,7 @@ function handleIndicator(el) {
     item.removeAttribute('style');
   });
   
+  
   indicator.style.width = `${el.offsetWidth}px`;
   indicator.style.left = `${el.offsetLeft}px`;
   
@@ -82,3 +83,4 @@ items.forEach((item, index) => {
   item.addEventListener('click', (e) => { handleIndicator(e.target)});
   item.classList.contains('active') && handleIndicator(item);
 });
+
