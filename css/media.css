@@ -17,15 +17,226 @@
     .publication-img {
         width: 281px;
     }
-    .p-cards {
-        height: 556px;
-    }
+    
     
     .team {
         height: 528px;
     } 
     .main-photo {
         height: 528px;
+    }
+    
+}
+
+@media screen and (max-width: 415px) {
+    .container {
+        padding: 0 30px;
+    }
+    .header {
+        width: 415px;
+        padding: 0 15px;
+    }
+    .header-adress {
+        left: 0;
+        position: absolute;
+        top: 0;
+        height: 45px;
+        width: 415px;
+        align-items: center;
+        background-color: rgba(245, 245, 250, 0.2);
+        padding: 0 15px;
+    }
+    .language:after {
+        display: none;
+        overflow: hidden;
+    }
+    .tel::after {
+        display: none;
+        overflow: hidden;
+    }
+    .name-adres {
+        display: none;
+        overflow: hidden;
+    }
+    .icon-header-facebook {
+        display: none;
+        overflow: hidden;
+    }
+    .header-mobile {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .header-mobile-left {
+        display: flex;
+        height: 57px;
+    }
+    
+    .tel {
+        position: absolute;
+        right: 15px;
+    }
+    .icon-header-logo {
+        height: 32px;
+        width: 62px;
+    }
+    .icon-header-slash {
+        display: block;
+        width: 12px;
+        height: 26px;
+        margin: 0 4px;
+    }
+    .header-services {
+        display: block;
+        font-size: 20px;
+        line-height: 24px;
+        color: #fff;
+        font-weight: 400;
+    }
+     /*burger icon*/
+     .burger-icon {
+        border: none;
+        background: none;
+        width: 32px;
+        height: 32px;
+        padding: 10px 7px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .burger-icon::before,
+    .burger-icon::after  {
+        content: "";
+        display: block;
+        width: 18px;
+        height: 2px;
+        background: #fff;
+    }  
+    .burger-icon-inner {
+        display: block;
+        width: 18px;
+        height: 2px;
+        background: #fff;
+    }
+    .burger {
+        height: 32px;
+    }
+    
+    .nav {
+        display: none;
+    }
+    /*menu-open*/
+    .header.menu-open {
+        position: absolute;
+        width: 100%;
+    }
+    .menu-open .nav-link {
+        min-height: 351px;
+        width: 409px;
+        background: #fff;
+        position: relative;
+        z-index: 5;
+        min-width: 100%;
+        padding: 0;
+    }
+    .heading {
+        height: 600px;
+    }
+    .scroll {
+        position: relative;
+        right: 50%;
+    }
+    .experience {
+        display: block;
+    }
+    .experience-of {
+        font-size: 30px;
+        line-height: 37px;
+    }
+    .experience-list {
+        display: flex;
+    }
+    .experience-border {
+        height: 4px;
+        width: 315px;
+        display: flex;
+        position: relative;
+        margin: 0;
+    }
+    .experience-list {
+        height: 67px;
+        width: 80%;
+        overflow-x: auto;
+        gap: 30px;
+    }
+    .experience-about {
+        width: 100%;
+    }
+    .experience-of {
+        width: 350px;
+    }
+    .experience-services {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .services {
+        padding-top: 90px;
+    }
+    .services-item-text {
+        font-size: 30px;
+        line-height: 37px;
+    } 
+    .s-cards {
+        display: block;
+    }
+    .services-card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .grid {
+        display: block;
+    }
+    .slick-initialized .slick-slide {
+        position: relative;
+        display: block;
+        height: 100%;
+    }
+    .publications {
+        padding-top: 30px;
+        height: 100%;
+    }
+    .publication-item-text {
+        font-size: 30px;
+        line-height: 37px;
+    }
+    .grid-wrap {
+        display: block;
+    }
+    .p-cards:not(:last-child) {
+        margin-right: 0;
+    }
+    .p-cards:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    .publication-img {
+        width: 100%;
+    }
+    .main-photo {
+        height: 500px;
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+    }
+    .p-about:first-of-type {
+        height: 232px;
+    }
+    .p-about:nth-child(2) {
+        height: 314px;
+    }
+    .p-about:last-child {
+        height: 254px;
+    }
+    .footer {
+        padding-top: 30px;
     }
     
 }

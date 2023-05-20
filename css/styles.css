@@ -32,6 +32,12 @@ li {
     width: 130px;
     height: 60px;
 }
+.icon-header-slash {
+    display: none;
+}
+.header-services {
+    display: none;
+}
 .header-right {
     display: flex;
     flex-direction: column;
@@ -64,12 +70,17 @@ li {
 .lang-name:last-child{
     background-color: #F0145A;
 }
+.lang-name:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
 .lang {
     font-size: 12px;
     font-weight: 700;
     color: #fff;
+    position: relative;
+    padding: 5px 7px;
 }
-
 .name-adres {
     margin-left:  6px;
     font-size: 16px;
@@ -93,13 +104,18 @@ li {
     margin-left: 6px;
     fill: #fff;
 }
+.icon-header-facebook:hover {
+    fill: #F0145A;
+}
 .tel::after {
     content: "\25CF";
     position: relative;
     margin-left: 6px;
     bottom: 1px;
 }
-
+.burger-icon {
+    display: none;
+}
 .nav-list {
     display: flex;
     align-items: center;
@@ -111,10 +127,35 @@ li {
     font-size: 16px;
     line-height: 1.25;
     font-weight: 700;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 3px;
 }
+.nav-link:hover {
+    color: #F0145A;
+}
+.nav-link::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    background: #fff;
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+    width: 0;
+}
+
+.nav-link:hover::after {
+    width: 100%; 
+    left: 0; 
+}
+
 /*main*/
 .main {
-    background: linear-gradient(#323264  0% ,#323264  59.9%, #643E72 100%) ;  
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) ;  
     border-radius: 0 0 12px 12px;       
 }
 /*.main::after {
@@ -155,12 +196,13 @@ li {
     width: 42px;
     height: 42px;
     fill: none;
+    stroke: #fff;
     position: absolute;
     left: 48%;
     top: 728px;
 }
-.icon-scroll path:hover {
-    fill: #F0145A;
+.icon-scroll:hover {
+    stroke: #F0145A;
 }
 .main-container {
     padding: 0 180px;
@@ -222,11 +264,14 @@ li {
     font-weight: bold;
     color: #24A3FF;
 }
+.services-item:hover {
+    color: #F0145A;
+}
 .services-item-text {
     font-size: 38px;
     line-height: 46px;
     font-weight: bold;
-    background-image: linear-gradient(#F0145A  0%,#EF8080  100%);
+    background-image: linear-gradient(90deg,#F0145A  0%,#EF8080  100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 10px 0 60px;
@@ -427,14 +472,14 @@ li {
     -webkit-text-fill-color: transparent;
 }
 /*p-cards*/
-.p-cards {
-    width: 420px;
-    height: 450px;  
+.p-cards {  
     background: #fff;
     border-radius: 8px;
+    padding-bottom: 30px;
 }
-.flex {
-    display: flex;
+.grid-wrap {
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
 }
 .p-cards:not(:last-child) {
     margin-right: 30px;
@@ -500,11 +545,16 @@ li {
 .icon-footer-facebook {
     width: 38px;
     height: 38px;
+    fill: #24A3FF;
+}
+.icon-footer-facebook:hover {
+    fill: #F0145A;
 }
 .footer-contacts {
     display: flex;
     align-items: center;
 }
+
 .footer-tel {
     font-size: 16px;
     line-height: 20px;
@@ -524,6 +574,9 @@ li {
     font-weight: bold;
     color: #24A3FF;    
     margin-left: 10px;
+}
+.footer-email:hover {
+    color: #F0145A;
 }
 .footer-email::before {
     content: "\25CF";

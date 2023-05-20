@@ -16,14 +16,34 @@
   </head>
   <body>
     <header class="header container">
-      <div>
+
+    <div class="header-mobile">
+      <div class="header-mobile-left">
+      <div class="header-icon-logo">
         <a href="#">
           <svg class="icon icon-header-logo">
             <use xlink:href="images/sprite.svg#header-logo"></use>
           </svg>
         </a>
       </div>
-      <div class="header-right">
+      <div class="header-slash">
+      <a href="">
+        <svg class="icon icon-header-slash">
+          <use xlink:href="images/sprite.svg#slash"></use>
+        </svg>
+      </a>
+      </div>
+      
+      <h3 class="header-services">services</h3>
+      </div>
+      <div class="burger">
+       <button id="burger-icon" class="burger-icon">
+          <span class="burger-icon-inner"></span>
+        </button>
+      </div>  
+    </div>
+
+    <div class="header-right">
         <div class="header-adress">
           <ul class="language">
             <li class="lang-name"><a href="" class="lang"> УК</a></li>
@@ -38,6 +58,8 @@
             </svg>
           </a>
         </div>
+        
+        
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item"><a href="" class="nav-link">about us</a></li>
@@ -63,7 +85,7 @@
         </div>         
         <div class="experience main-container" >
           <div class="experience-of">
-            <ul id="experience">
+            <ul id="experience" class="experience-list">
               <li class="name-of-experience"
                 ><a href="#" data-target="#content1"  class="experience-name active" 
                   >Consistent</a
@@ -263,7 +285,7 @@
 
       <a href="" class="publication-item">Publications &rsaquo;</a>
       <h3 class="publication-item-text">We have something to tell</h3>
-    <div class="flex">
+    <div class="grid-wrap">
       <div class="p-cards">
         <div><img class="publication-img" src="images/public/Cover1.png" alt=""></div>  
         <div class="p-about">
@@ -300,7 +322,7 @@
       <span class="footer-adress-name">Kyiv, Mechnikova str, 14/1 </span>
       <a href="" class="map">On map</a>
       </div>
-      </div>
+      
       <div class="footer-contacts">
         <a href="">
           <svg class="icon icon-footer-facebook">
@@ -312,6 +334,7 @@
       </div>
       <div class="copyrights">
         <span>© 2021 HLEGAL Law company, LLC</span>
+      </div>
       </div>
     </footer>
 
