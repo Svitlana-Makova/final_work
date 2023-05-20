@@ -130,9 +130,8 @@
         position: absolute;
         width: 100%;
     }
-    .menu-open .nav-link {
+    .menu-open .header {
         min-height: 351px;
-        width: 409px;
         background: #fff;
         position: relative;
         z-index: 5;
