@@ -254,6 +254,9 @@
         width: 520px;
         transform: translate(-40%, 10px);
     }
+    .name-of-experience:not(:last-child) {
+        padding: 0;
+    }
     .experience-list {
         display: -webkit-box;
         height: 37px;
