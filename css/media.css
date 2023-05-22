@@ -5,6 +5,12 @@
     .main-container {
         padding: 0 60px;
     }
+    .main::before {
+        width: 96%;
+    }
+    .main::after {
+        width: 92%;
+    }
     .name-of-experience {
         width: 375px;
     }
@@ -25,6 +31,14 @@
     .main-photo {
         height: 528px;
     }
+    /*pages*/
+    /*service-entry*/
+    .service-publications {
+        height: 630px;
+    }
+    .services-area-list {
+        width: 422px;
+    }
     
 }
 
@@ -35,6 +49,7 @@
     .header {
         width: 415px;
         padding: 0 15px;
+        z-index: 2;
     }
     .header-adress {
         left: 0;
@@ -130,30 +145,121 @@
         position: absolute;
         width: 100%;
     }
-    .menu-open .header {
-        min-height: 351px;
-        background: #fff;
-        position: relative;
+    .menu-open .header-right {
+        height: 667px;
+        background: #323264;
+        position: absolute;
         z-index: 5;
         min-width: 100%;
-        padding: 0;
+        left: 0px;
+        top: 0px;
+    }
+    .menu-open .burger-icon {
+        position: absolute;
+        top: 335px;
+        right: 27px;
+    }
+    .menu-open .burger-icon::before {
+        transform: rotate(45deg);
+        transform-origin: 0 3px;
+        background: #EC6F5D;
+        position: relative;
+        left: 4px;
+        z-index: 10;
+    }
+    .menu-open .burger-icon::after {
+        transform: rotate(-45deg);
+        transform-origin: 0 12px;
+        position: relative;
+        left: 13px;
+        background: #EC6F5D;
+        z-index: 10;
+    }
+    .menu-open .burger-icon-inner {
+        
+        display: none;
+    }
+    .menu-open .nav {
+        display: flex;
+        width: 96%;
+        position: absolute;
+        left: 8px;
+        top: 316px;
+        height: 351px;
+    }
+    .menu-open .nav-item {
+        display: flex;
+        height: 57px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 15px;
+        background: #F5F5FA;
+        border-radius: 12px;
+    }
+    .menu-open .nav-list {
+        flex-direction: column;
+        width: 100%;
+        padding: 64px 12px 0;
+        background: #fff;
+        border-radius: 12px;
+    }
+    .menu-open .nav-link {
+        color: #24A3FF;
+        font-size: 24px;
+        line-height: 38px;
+        border-bottom: none;
+    }
+    .menu-open .nav-link:hover {
+        color: #F0145A;
+    }
+    .menu-open .header-adress {
+        display: none;
+    }
+    .main:before {
+        width: 90%;
+    }
+    .main::after {
+        width: 82%;
+    }
+    .splash { 
+        background-image: url(../images/svg/mobile-symbol.svg);
+        background-repeat: no-repeat; 
+        position: relative;
+        height: 100%;
+        right: 20px;
+        background-repeat: no-repeat;
     }
     .heading {
         height: 600px;
+        width: 50%;
+        display: flex;
+        text-align: center;
+        position: relative;
+        left: 28%;   
     }
     .scroll {
         position: relative;
-        right: 50%;
+        right: 10px;
+        bottom: 190px;
     }
+
     .experience {
         display: block;
     }
     .experience-of {
         font-size: 30px;
         line-height: 37px;
+        width: 520px;
+        transform: translate(-40%, 10px);
     }
     .experience-list {
-        display: flex;
+        display: -webkit-box;
+        height: 37px;
+        margin-bottom: 30px;
+        width: 108%;
+        overflow-x: auto;
     }
     .experience-border {
         height: 4px;
@@ -162,24 +268,16 @@
         position: relative;
         margin: 0;
     }
-    .experience-list {
-        height: 67px;
-        width: 80%;
-        overflow-x: auto;
-        gap: 30px;
-    }
     .experience-about {
-        width: 100%;
-    }
-    .experience-of {
-        width: 350px;
+        width: 100%;   
+        margin-top: 30px;
     }
     .experience-services {
         font-size: 20px;
         line-height: 24px;
     }
     .services {
-        padding-top: 90px;
+        padding-top: 120px;
     }
     .services-item-text {
         font-size: 30px;
@@ -225,17 +323,98 @@
         width: 100%;
         border-radius: 12px 12px 0 0;
     }
-    .p-about:first-of-type {
-        height: 232px;
-    }
-    .p-about:nth-child(2) {
-        height: 314px;
-    }
-    .p-about:last-child {
-        height: 254px;
-    }
+    
     .footer {
         padding-top: 30px;
+        height: 306px;
     }
-    
+    .footer-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-adress {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-adress-name {
+        padding-bottom: 10px;
+    }
+    .map::before {
+        display: none;
+    }
+    .footer-contacts {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .icon-footer-facebook {
+        margin-bottom: 10px;
+    }
+    .footer-tel {
+        margin-bottom: 10px;
+    }
+    .copyrights {
+        flex-direction: column;
+        bottom: 0;
+    }
+    .footer-tel::before {
+        display: none;
+    }
+    .footer-email::before {
+        display: none;
+    }
+
+    /*pages*/
+    /*services*/
+    .menu-open .active-page.nav-item {
+        background: #E6E6F0;
+    }
+    .header-s-mobile-left {
+        display: flex;
+        height: 57px;
+    }
+    .icon-s-header-slash {
+        height: 26px;
+        width: 12px;
+    }
+    .header-s-services {
+        font-size: 20px;
+        line-height: 24px;    
+    }
+    .s-s-services {
+        padding-top: 132px;
+    }
+    /*service-entry*/
+    .main-entry {
+        height: 1926px;
+    }
+    .main-entry:before {
+        width: 90%;
+    }
+    .main-entry:after {
+        width: 82%;
+    }
+    .area-container {
+        padding: 0 30px;
+    }
+    .services-include {
+        display: block;
+    }
+    .services-area-list {
+        width: 100%;
+        padding-top: 15px;
+    }
+    .service-publications {
+        padding-top: 30px;
+        height: 100%;
+    }
+    /*popup-form*/
+    .popup-form-wrapper {
+        padding: 0;
+        min-height: 0;
+        border-radius: 12px;
+    }
+    .popup-form {
+        width: 100%;
+    }
 }
