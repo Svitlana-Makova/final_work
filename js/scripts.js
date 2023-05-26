@@ -41,6 +41,23 @@ $(document).ready(function () {
 });
 });
 
+/*carousel*/
+$(document).ready(function () {
+  $(".carousel-achievements-mobile").slick({
+      dots: true,
+      arrows: false,
+});
+});
+
+$(document).ready(function () {
+  $(".carousel-achievements").slick({
+      dots: true,
+      arrows: false,
+});
+});
+
+
+
 // Scroll
 $.fn.scrollFun = function () {
 	$(this).click(function (e) {

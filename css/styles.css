@@ -9,6 +9,7 @@ body {
 }
 a {
     text-decoration: none;
+    height: 100%;
 }
 ul {
     list-style-type: none;
@@ -28,6 +29,9 @@ li {
     height: 116px;
     align-items: end;
     z-index: 5;
+}
+.header-mobile {
+    display: flex;
 }
 .icon-header-logo {
     width: 130px;
@@ -132,9 +136,6 @@ li {
     display: block;
     position: relative;
     padding-bottom: 3px;
-}
-.nav-link:hover {
-    color: #F0145A;
 }
 .nav-link::after {
     background: none repeat scroll 0 0 transparent;
@@ -276,7 +277,7 @@ li {
 .services-item:hover {
     color: #F0145A;
 }
-.services-item-text {
+.subtitle {
     font-size: 38px;
     line-height: 46px;
     font-weight: bold;
@@ -385,7 +386,7 @@ li {
 .slick-dots {
     bottom: 10px;
 }
-.slick-dots li.slick-active button:before{
+.slick-dots li.slick-active button:before {
     color: #24A3FF;
 }
 .slick-dots li button:before {
@@ -394,9 +395,6 @@ li {
     color: #24A3FF;
     opacity: 20%;
 }
-.slick-dotted.slick-slider {
-    margin-bottom: 50px;
-} 
 
 /*Clients*/
 
@@ -639,7 +637,7 @@ li {
     content: "";
     position: absolute;
     background:#E7E7F2;
-    width: 93%;
+    width: 94%;
     height: 20px;
     bottom: -20px;
     left: 40px;
@@ -715,7 +713,7 @@ li {
     font-size: 22px;
     line-height: 27px;
     color: #fff;
-    padding-top: 60px;
+    padding-top: 30px;
     border-top: 4px solid rgba(255, 255, 255, 0.5);
     margin-bottom: 30px;
 }
@@ -822,7 +820,7 @@ li {
     cursor: pointer;
 }
  /*burger icon*/
- .popup-burger-icon {
+.popup-burger-icon {
     border: none;
     background: none;
     width: 32px;
@@ -859,4 +857,267 @@ li {
     left: 13px;
     background: #EC6F5D;
     z-index: 10;
+}
+.footer-border-none {
+    border-top: none;
+    padding-top: 0;
+}
+/*About us*/
+.header-about-services {
+    font-size: 36px;
+    line-height: 44px;
+    color: #323264;
+    font-weight: 400;
+}
+.a-language::after,
+.lang-white,
+.a-adres,
+.a-tel {
+    color: #B3B3BA;
+}
+.lang-white:hover {
+    background: #F5F5FA;
+    border-radius: 8px;
+}
+.icon-header-white-facebook {
+    fill: #B3B3BA;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 5px;
+    margin-left: 6px;
+}
+.icon-header-white-facebook:hover {
+    fill: #F0145A;
+}
+.a-link {
+    color: #24A3FF;
+}
+.a-link::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    background: #24A3FF;
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+    width: 0;
+}
+.active-page .nav-link::after {
+    display: none;
+}
+/*main-about*/
+.a-wrap-legal-services {
+    padding-top: 176px;
+    display: flex;
+    margin-bottom: 60px;
+}
+.a-about-legal-services {
+    width: 662px;
+    height: 380px;
+}
+.a-legal-experience-border {
+    border-left: 4px solid #E6E6F0;
+    margin-left: 30px;
+    width: 388px;
+    height: 322px;
+    
+}
+.a-wrap-legal-experience {
+    width: 354px;
+}
+.a-legal-services {
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: bold;
+    background-image: linear-gradient(90deg,#F0145A 0%,#EF8080 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 28px;
+}
+.a-a-legal-services {
+    font-size: 19px;
+    line-height: 30px;
+}
+.a-a-legal-services:not(:last-child) {
+    padding-bottom: 20px;
+}
+.a-legal-experience {
+    padding-left: 34px;
+}
+.a-legal-experience:not(:last-child) {
+    margin-bottom: 40px;
+    
+}
+.icon-legal-experience {
+    width: 32px;
+    height: 32px;
+    top: 3px;
+    position: relative;
+}
+
+.a-numbers {
+    margin-left: 8px;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: bold;
+    background-image: linear-gradient(90deg,#F0145A 0%,#EF8080 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.a-legal-text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #323264;
+    padding-top: 10px;
+}
+.team-photo {
+    height: 438px;
+    background-image: url(/images/photo/team-photo.png);
+}
+.quality-wrap {
+    margin: 60px auto;
+    display: flex;
+    height: 100%;
+}
+.quality-wrap :not(:last-child) {
+    margin-right: 60px;
+}
+.quality-text-wrap {
+    width: 658px;
+}
+.quality-text {
+    font-size: 19px;
+    line-height: 30px;
+}
+.quality-text:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.quality-title {
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: bold;
+    width: 362px;
+    background-image: linear-gradient(90deg,#F0145A 0%,#EF8080 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.achievements-wrap {
+    background: #F5F5FA;
+    padding-bottom: 1px;
+}
+.achievements-subtitle {
+    font-size: 14px;
+    line-height: 17px;
+    color: #323264;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+.achievements-logo {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+.a-size {
+    height: 110px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+.carousel-achievements-mobile {
+    display: none;
+}
+/*footer*/
+.a-footer {
+    background: #F5F5FA;
+}
+.carousel-achievements-mobile {
+    display: none;
+}
+/*Team*/
+.title {
+    padding-top: 176px;
+    margin-bottom: 60px;
+}
+.team-wrap {
+    display: flex;
+    margin-bottom: 60px;
+}
+.team-cards {
+    width: 400px;
+}
+.team-cards:not(:last-child) {
+    margin-right: 60px;
+}
+.team-photos {
+    margin-bottom: 15px;
+}
+.team-color {
+    color: #323264;
+}
+.arrow-right-wrap {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 45px;
+}
+.arrow-right {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #F5F5FA;
+}
+.arrow-right::after {
+    position: absolute;
+    content: "\203A";
+    color: #24A3FF;
+    font-size: 32px;
+    line-height: 20px;
+    left: 12px;
+    bottom: 10px;
+}
+.arrow-right:hover::after {
+    color: #F0145A;
+}
+/*team-entry*/
+.individual-card {
+    display: flex;
+    align-items: center;
+}
+.email {
+    font-size: 16px;
+    line-height: 20px;
+    color: #24A3FF;
+}
+.linkedin {
+    font-size: 16px;
+    line-height: 20px;
+    color: #24A3FF;
+}
+.team-workers-about {
+    font-size: 16px;
+    line-height: 26px;
+}
+.team-workers-about:not(:last-of-type) {
+    padding-bottom: 20px;
+}
+.skills {
+    font-size: 14px;
+    line-height: 17px;
+    color: #323264;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 30px auto 15px;
+}
+.university-name {
+    font-size: 16px;
+    line-height: 26px;
 }
