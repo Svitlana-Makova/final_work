@@ -1090,24 +1090,44 @@ li {
 /*team-entry*/
 .individual-card {
     display: flex;
-    align-items: center;
+}
+.team-entry-photo {
+    margin-right: 60px;
+}
+.information-data {
+    padding-top: 15px;
 }
 .email {
     font-size: 16px;
     line-height: 20px;
     color: #24A3FF;
 }
+.email::before {
+    content: "\25CF";
+    position: relative;
+    bottom: 1px;
+    margin:0 10px;
+    color: #B3B3BA;
+}
 .linkedin {
     font-size: 16px;
     line-height: 20px;
     color: #24A3FF;
 }
+.linkedin::before {
+    content: "\25CF";
+    position: relative;
+    bottom: 1px;
+    margin:0 10px;
+    color: #B3B3BA;
+}
 .team-workers-about {
     font-size: 16px;
     line-height: 26px;
+    padding-top: 20px;
 }
 .team-workers-about:not(:last-of-type) {
-    padding-bottom: 20px;
+    border-top: 4px solid #E6E6F0;
 }
 .skills {
     font-size: 14px;
