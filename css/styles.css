@@ -653,12 +653,7 @@ li {
     text-align: center;
 }
 .service-entry-types {
-    font-size: 38px;
-    line-height: 46px;
-    font-weight: bold;
-    background-image: linear-gradient(90deg,#F0145A  0%,#EF8080  100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin: 0 0 15px;
 }
 .entry-box {
     display: block;
@@ -981,6 +976,7 @@ li {
 
 .quality-title {
     width: 362px;
+    margin: 0;
 }
 
 .achievements-wrap {
@@ -1102,9 +1098,10 @@ li {
     font-size: 16px;
     line-height: 26px;
     padding-top: 20px;
-}
-.team-workers-about:not(:last-of-type) {
     border-top: 4px solid #E6E6F0;
+}
+.team-workers-about:last-of-type {
+    border: none;
 }
 .skills {
     font-size: 14px;
