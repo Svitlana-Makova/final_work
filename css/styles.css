@@ -958,7 +958,7 @@ li {
 }
 .team-photo {
     height: 438px;
-    background-image: url(/images/photo/team-photo.png);
+    background-image: url(../images/photo/team-photo.png);
 }
 .quality-wrap {
     margin: 60px auto;
