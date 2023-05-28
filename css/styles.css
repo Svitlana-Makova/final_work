@@ -1063,9 +1063,14 @@ li {
 /*team-entry*/
 .individual-card {
     display: flex;
+    padding: 176px 180px 60px;
 }
 .team-entry-photo {
     margin-right: 60px;
+}
+.team-individual-photo {
+    width: 400px;
+    height: 500px;
 }
 .information-data {
     padding: 0 0 30px;
