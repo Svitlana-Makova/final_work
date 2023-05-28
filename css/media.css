@@ -237,7 +237,7 @@
         position: absolute;
         left: 8px;
         top: 316px;
-        height: 351px;
+        /*height: 351px;*/
     }
     .menu-open .nav-item {
         display: flex;
@@ -262,6 +262,8 @@
         font-size: 24px;
         line-height: 38px;
         border-bottom: none;
+        display: flex;
+        align-items: center;
     }
     .menu-open .nav-link:hover {
         color: #F0145A;
@@ -505,10 +507,6 @@
     /*burger*/
     .burger-icon-white::before,
     .burger-icon-white::after {
-        content: "";
-        display: block;
-        width: 18px;
-        height: 2px;
         background: #323264;
     }  
     .burger-icon-inner-white {
