@@ -742,6 +742,9 @@ li {
     opacity: 70%;
     padding-top: 243px;
 }
+.poup-title {
+    margin-bottom: 30px;
+}
 .popup-form {
     width: 650px;
     height: 612px;
