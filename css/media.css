@@ -89,6 +89,10 @@
     .team-workers-about {
         width: 544px;
     }
+    /*Contacts*/
+    .popup-contact-wrapper {
+        padding-top: 176px;
+    }
     
 }
 
@@ -633,6 +637,20 @@
     .team-workers-about {
         width: 355px;
     }
-    
+    /*Contacts*/
+    .popup-contact-wrapper {
+        padding: 132px 30px 0;
+        display: block;
+        margin-bottom: 30px;
+    }
+    .contacts-popup {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .popup-contacts {
+        width: 100%;
+        margin: 0 auto;
+        height: 640px;
+    }
     
 }
