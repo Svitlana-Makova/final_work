@@ -770,7 +770,8 @@ li {
 }
 #name::placeholder,
 #tel::placeholder,
-#email::placeholder {
+#email::placeholder,
+#comments::placeholder {
     width: 16px;
     line-height: 26px;
     color: #B3B3BA;
@@ -1126,4 +1127,61 @@ li {
 .university-name {
     font-size: 16px;
     line-height: 26px;
+}
+/*Contacts*/
+.popup-contact-wrapper {
+    padding-top: 176px;
+    display: flex;
+    margin-bottom: 60px;
+}
+.contacts-popup {
+    width: 510px;
+}
+.name-adres-contact {
+    font-size: 21px;
+    line-height: 30px;
+    display: grid;
+    padding-bottom: 30px;
+    border-bottom: 4px solid #E6E6F0;
+    color: #323264;
+    margin-bottom: 30px;
+}
+.communication {
+    display: grid;
+}
+.tel-contact {
+    font-size: 21px;
+    line-height: 30px;
+    color: #323264;
+    margin: 30px 0 15px;
+}
+.contact-email {
+    font-size: 21px;
+    line-height: 30px;
+    color: #24A3FF;
+    padding: 15px 0 30px;
+    border-bottom: 4px solid #E6E6F0;
+}
+.popup-contacts {
+    width: 510px;
+    margin:0 0 0 60px;
+}
+.contacts-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.facebook-text {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #24A3FF;
+    margin-left: 10px;
+    display: grid;
+    text-transform: uppercase;
+}
+.popup-title-text {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 30px;
 }
