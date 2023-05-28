@@ -101,6 +101,19 @@ li {
     font-size: 16px;
     color: #fff;
 }
+.tel:hover,
+.name-adres:hover,
+.footer-tel:hover,
+.footer-adress:hover,
+.map:hover,
+.footer-adress-name:hover,
+.facebook-text:hover,
+.contact-email:hover,
+.tel-contact:hover,
+.name-adres-contact:hover,
+.footer-email:hover {
+    color: #F0145A;
+}
 .icon-header-facebook {
     position: relative;
     top: 5px;
