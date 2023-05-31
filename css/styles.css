@@ -679,6 +679,9 @@ li {
     background: #24A3FF 50%;
     box-shadow: inset 100px 100px rgba(36, 163, 255, 0.5);
 }
+.button-entry:hover {
+    opacity: 80%;
+}
 .button-entry-text {
     font-size: 16px;
     line-height: 20px;
@@ -802,6 +805,9 @@ li {
     color: #fff;
     border: #fff;
     cursor: pointer;
+}
+.popup-buttom-send:hover {
+    opacity: 80%;
 }
  /*burger icon*/
 .popup-burger-icon {
@@ -1120,18 +1126,18 @@ li {
 }
 .communication {
     display: grid;
+    grid-gap: 15px;
 }
 .tel-contact {
     font-size: 21px;
     line-height: 30px;
     color: #323264;
-    margin: 30px 0 15px;
 }
 .contact-email {
     font-size: 21px;
     line-height: 30px;
     color: #24A3FF;
-    padding: 15px 0 30px;
+    padding-bottom: 30px;
     border-bottom: 4px solid #E6E6F0;
 }
 .popup-contacts {
@@ -1140,7 +1146,7 @@ li {
 .contacts-footer {
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 .facebook-text {
     font-size: 12px;
@@ -1155,4 +1161,11 @@ li {
     font-size: 30px;
     line-height: 37px;
     margin-bottom: 30px;
+}
+/*Publications*/
+.publications-title {
+    height: 430px;
+    transform: translate(25%, 50%);
+    font-size: 50px;
+    text-transform: uppercase;
 }
