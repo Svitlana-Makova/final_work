@@ -1,7 +1,5 @@
 @media screen and (max-width: 1024px) {
-    .header {
-        width: 1024px;
-    }
+    
     .main-container {
         padding: 0 60px;
     }
@@ -11,18 +9,13 @@
     .main::after {
         width: 92%;
     }
-    .name-of-experience {
-        width: 375px;
+    .experience {
+        grid-template-columns: 1fr 0fr 1fr;
     }
-    .grid {
-        grid-template-columns: 256px 256px 256px 256px;
+    .experience-about {
+        transform: none;
     }
-    .publications {
-        height: 689px;
-    } 
-    .publication-img {
-        width: 281px;
-    }
+    
     
     
     .team {
@@ -33,20 +26,10 @@
     }
     /*pages*/
     /*service-entry*/
-    .service-publications {
-        height: 630px;
-    }
     .services-area-list {
         width: 422px;
     }
     /*about us*/
-    .a-wrap-legal-services {
-        padding-top: 176px;
-        height: 640px;
-    }
-    .a-about-legal-services {
-        width: 486px;
-    }
     .team-photo {
         background-image: url(../images/photo/team-photo-tablet.png);
         height: 312px;
@@ -61,15 +44,12 @@
     .main-container-mobile {
         padding: 0 180px;
     }
-    .title {
-        padding: 176px 0 0;
-    }
     .team-photos {
         width: 262px;
     }
     /*team-entry*/
     .individual-card {
-        padding: 176px 60px 60px;
+        padding-top: 176px;
     }
     .team-individual-photo {
         width: 300px;
@@ -90,11 +70,12 @@
         width: 544px;
     }
     /*Contacts*/
-    .popup-contact-wrapper {
-        padding-top: 176px;
+    .popup-contacts {
+        height: 100%;
     }
     
 }
+
 
 @media screen and (max-width: 415px) {
     .container {
@@ -105,7 +86,7 @@
         padding: 0 15px;
         z-index: 2;
     }
-    .header-adress {
+    .header-info {
         left: 0;
         position: absolute;
         top: 0;
@@ -200,9 +181,10 @@
     .header.menu-open {
         position: absolute;
         width: 100%;
+        top: 0;
     }
-    .menu-open .header-right {
-        height: 667px;
+    .menu-open .header-menu {
+        height: 770px;
         background: #323264;
         position: absolute;
         z-index: 5;
@@ -272,7 +254,7 @@
     .menu-open .nav-link:hover {
         color: #F0145A;
     }
-    .menu-open .header-adress {
+    .menu-open .header-info {
         display: none;
     }
     .main:before {
@@ -306,11 +288,12 @@
     .experience {
         display: block;
     }
+    .experience-name {
+        padding-right: 20px;
+    }
     .experience-of {
         font-size: 30px;
         line-height: 37px;
-        width: 520px;
-        transform: translate(-40%, 10px);
     }
     .name-of-experience:not(:last-child) {
         padding: 0;
@@ -336,9 +319,6 @@
     .experience-services {
         font-size: 20px;
         line-height: 24px;
-    }
-    .services {
-        padding-top: 120px;
     }
     .subtitle {
         font-size: 30px;
@@ -448,7 +428,7 @@
     }
     /*service-entry*/
     .main-entry {
-        height: 1926px;
+        height: 1780px;
     }
     .main-entry:before {
         width: 90%;
@@ -494,7 +474,7 @@
         display: flex;
         height: 57px;
     }
-    .a-header-adress {
+    .a-header-info {
         left: 0;
         position: absolute;
         top: 0;
@@ -532,9 +512,9 @@
     }
     .a-wrap-legal-services {
         display: block;
-        padding: 132px 30px 0 30px;
-        height: 991px;
-        margin-bottom: 90px;
+        padding: 0 30px;
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
     .a-about-legal-services {
         width: 100%;
@@ -546,7 +526,7 @@
     .a-legal-experience-border {
         margin-left: 0;
         position: relative;
-        top: 217px;
+        margin-top: 30px;
         width: 100%;
     }
     .team-photo {
@@ -601,10 +581,10 @@
     /*team*/
     .main-container-mobile {
         padding: 0 30px;
+        margin-top: 30px;
     }
     .title {
         margin: 0 auto;
-        padding: 123px 0 0;
         margin-bottom: 30px;
     }
     .team-wrap {
@@ -626,7 +606,8 @@
     /*team-entry*/
     .individual-card {
         display: block;
-        padding: 132px 30px 30px;
+        padding: 0 30px 30px;
+        margin-top: 30px;
     }
     .team-entry-photo {
         margin-bottom: 30px;
@@ -639,9 +620,10 @@
     }
     /*Contacts*/
     .popup-contact-wrapper {
-        padding: 132px 30px 0;
+        padding: 0 30px 0;
         display: block;
         margin-bottom: 30px;
+        margin-top: 30px;
     }
     .contacts-popup {
         width: 100%;
