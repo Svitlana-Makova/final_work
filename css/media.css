@@ -634,5 +634,8 @@
         margin: 0 auto;
         height: 640px;
     }
-    
+    /*Publications*/
+    .publications-title {
+        height: 200px;
+    }
 }
